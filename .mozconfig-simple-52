@@ -29,10 +29,8 @@ ac_add_options --disable-crashreporter
 ac_add_options --disable-webrtc
 #ac_add_options --disable-ctypes
 ac_add_options --with-ccache=/usr/bin/ccache
-ac_add_options --disable-loop
 #ac_add_options --disable-jemalloc
 #ac_add_options --disable-replace-malloc
 ac_add_options --disable-eme
 #ac_add_options --with-l10n-base=/home/arthur/l10n
 ac_add_options --disable-gamepad
-ac_add_options --disable-intl
