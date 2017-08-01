@@ -1,0 +1,6 @@
+export CC=clang-3.8
+export CXX=clang++-3.8
+export CPPFLAGS="-fsanitize=undefined -fno-omit-frame-pointer"
+ac_add_options --enable-debug
+ac_add_options --enable-debug-symbols
+ac_add_options --disable-optimize
