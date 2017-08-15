@@ -6,14 +6,15 @@ mk_add_options MOZ_APP_DISPLAYNAME="Tor Browser"
 mk_add_options MOZILLA_OFFICIAL=1
 mk_add_options BUILD_OFFICIAL=1
 
-#export CC="clang"
-#export CXX="clang++"
-#export FLAGS="-v -fPIC -fstack-protector-strong -Werror=format -fsanitize=cfi -fvisibility=hidden -flto -B/usr/lib/gold-ld -Wl,-z,3relro,-z,now"
+#export CC="gcc-6"
+#export CXX="g++-6"
+export FLAGS="-fsanitize=undefined"
+#export FLAGS="-fno-omit-frame-pointer -fsanitize=undefined"
 #export FLAGS="-v -fPIC -fstack-protector-strong -Werror=format -fvisibility=hidden -flto -B/usr/lib/gold-ld -Wl,-z,relro,-z,now"
-#export CFLAGS="$FLAGS"
-#export CXXFLAGS="$FLAGS"
-#export CPPFLAGS="$FLAGS"
-#export LDFLAGS="$FLAGS"
+export CFLAGS="$FLAGS"
+export CXXFLAGS="$FLAGS"
+export CPPFLAGS="$FLAGS"
+export LDFLAGS="$FLAGS"
 
 #ac_add_options --enable-optimize
 ac_add_options --disable-optimize
@@ -26,7 +27,7 @@ ac_add_options --disable-strip
 ac_add_options --disable-install-strip
 ac_add_options --enable-tests
 ac_add_options --enable-debug-symbols
-ac_add_options --enable-debug
+ac_add_options --disable-debug
 ac_add_options --disable-maintenance-service
 ac_add_options --disable-crashreporter
 ac_add_options --disable-webrtc

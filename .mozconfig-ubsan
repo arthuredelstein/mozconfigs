@@ -1,0 +1,4 @@
+export CC="gcc-6"
+export CXX="g++-6"
+export CPPFLAGS="-fsanitize=undefined"
+export LDFLAGS="-lubsan -ldl -fsanitize=undefined -v"

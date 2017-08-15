@@ -1,9 +1,8 @@
 MOZ_MAKE_FLAGS=-j32
-export CC=clang-3.8
-export CXX=clang++-3.8
-export LD=clang++-3.8
-export CPPFLAGS="-fsanitize=undefined -fno-omit-frame-pointer"
-export LDFLAGS="-lubsan"
+export CC=/usr/bin/clang-4.0
+export CXX=/usr/bin/clang++-4.0
+export CPPFLAGS="-fsanitize=undefined -fno-omit-frame-pointer -g"
+export LDFLAGS="-lubsan -ldl -fsanitize=undefined -v"
 ac_add_options --enable-debug
 ac_add_options --enable-debug-symbols
 ac_add_options --disable-optimize
