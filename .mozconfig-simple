@@ -8,13 +8,13 @@ mk_add_options BUILD_OFFICIAL=1
 
 #export CC="gcc-6"
 #export CXX="g++-6"
-export FLAGS="-fsanitize=undefined"
+#export FLAGS="-fsanitize=undefined"
 #export FLAGS="-fno-omit-frame-pointer -fsanitize=undefined"
 #export FLAGS="-v -fPIC -fstack-protector-strong -Werror=format -fvisibility=hidden -flto -B/usr/lib/gold-ld -Wl,-z,relro,-z,now"
-export CFLAGS="$FLAGS"
-export CXXFLAGS="$FLAGS"
-export CPPFLAGS="$FLAGS"
-export LDFLAGS="$FLAGS"
+#export CFLAGS="$FLAGS"
+#export CXXFLAGS="$FLAGS"
+#export CPPFLAGS="$FLAGS"
+#export LDFLAGS="$FLAGS"
 
 #ac_add_options --enable-optimize
 ac_add_options --disable-optimize
