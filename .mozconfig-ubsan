@@ -1,4 +1,9 @@
-export CC="gcc-6"
-export CXX="g++-6"
+export CC=/usr/bin/gcc-4.9
+export CXX=/usr/bin/g++-4.9
 export CPPFLAGS="-fsanitize=undefined"
 export LDFLAGS="-lubsan -ldl -fsanitize=undefined -v"
+ac_add_options --enable-debug
+ac_add_options --enable-tests
+ac_add_options --disable-strip
+
+
